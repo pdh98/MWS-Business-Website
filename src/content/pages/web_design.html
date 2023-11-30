@@ -1,0 +1,100 @@
+---
+title: "Web Design"
+description: "Description for <meta> and OG tags"
+preloadImg: "/assets/images/imagename.format"
+permalink: "/web_design"
+eleventyNavigation:
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+<link rel="stylesheet" href="/assets/css/web_design.css" />
+{% endblock %} {% block body %}
+
+<div id="banner-712">
+  <div class="cs-container"><span class="cs-int-title">Web Design </span></div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/Brunswick Street.jpeg"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/Brunswick Street.jpeg"
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="/assets/images/Brunswick Street.jpeg"
+      alt="pills"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-75">
+  <div class="cs-container">
+    <div class="cs-wrapper">
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/README.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/README.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/README.webp"
+          alt="body builder"
+          width="500"
+          height="552"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Planning Your Website </span>
+      <h2 class="cs-title">Creativity That Works</h2>
+      <p class="cs-text">
+        We function as the architects of your website, translating your design
+        ideas into tangible online features. Through in-depth discussion, your
+        input becomes a pivotal aspect in shaping your website's overall design
+        and is what we use as the primary guiding principle throughout the
+        creation process.
+      </p>
+      <p class="cs-text">
+        You know your business best, which means that your input is essential to
+        ensuring that all of the business' online needs are catered for. This is
+        why we prioritise communication with our clients as the most important
+        aspect of the design component.
+      </p>
+
+      <p class="cs-text">
+        We aren't just developing a website, but the digital storefront of your
+        business. This is why, on the development journey, we communicate,
+        design and refine the details of your site with you, in order to craft a
+        website that not only meets but exceeds your expectations.
+      </p>
+      <a
+        class="cs-button-solid"
+        aria-label="learn more about our programs"
+        href="/contact"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+</section>
+
+{% endblock %}

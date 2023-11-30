@@ -1,0 +1,104 @@
+---
+title: "Ongoing Support "
+description: "Description for <meta> and OG tags"
+preloadImg: "/assets/images/imagename.format"
+permalink: "/website_maintenance"
+eleventyNavigation:
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+<link rel="stylesheet" href="/assets/css/web_design.css" />
+{% endblock %} {% block body %}
+
+<div id="banner-712">
+  <div class="cs-container">
+    <span class="cs-int-title">Ongoing Support </span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/Brunswick Street.jpeg"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/Brunswick Street.jpeg"
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="/assets/images/Brunswick Street.jpeg"
+      alt="pills"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-75">
+  <div class="cs-container">
+    <div class="cs-wrapper">
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            /assets/images/pngtree-customer-service-concept-with-a-man-sitting-at-his-laptop-and-png-image_8644423.png
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            /assets/images/pngtree-customer-service-concept-with-a-man-sitting-at-his-laptop-and-png-image_8644423.png
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/pngtree-customer-service-concept-with-a-man-sitting-at-his-laptop-and-png-image_8644423.png"
+          alt="body builder"
+          width="500"
+          height="552"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Maintaining and Updating Your Website </span>
+      <h2 class="cs-title">Assistance Whenever You Need It</h2>
+      <p class="cs-text">
+        We provide around-the-clock technical support, reachable via a direct
+        phone line. We understand the importance of continuous assistance in
+        maintaining a smoothly functioning website without experiencing
+        frustrating delays.
+      </p>
+      <p class="cs-text">
+        Subscribing to our service means more than just initial website setup –
+        it's a commitment to adaptability. Enjoy the flexibility of unlimited
+        edits to your website as part of your subscription.
+      </p>
+
+      <p class="cs-text">
+        This ensures that your site can seamlessly evolve with your business,
+        accommodating changes in services, products, or overall branding. We
+        prioritize efficiency, making necessary adjustments promptly to keep
+        your digital presence aligned with your business's dynamic nature.
+      </p>
+      <a
+        class="cs-button-solid"
+        aria-label="learn more about our programs"
+        href="/contact"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+</section>
+
+{% endblock %}

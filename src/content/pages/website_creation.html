@@ -1,0 +1,102 @@
+---
+title: "Website Creation"
+description: "Description for <meta> and OG tags"
+preloadImg: "/assets/images/imagename.format"
+permalink: "/website_creation"
+eleventyNavigation:
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+<link rel="stylesheet" href="/assets/css/web_design.css" />
+{% endblock %} {% block body %}
+
+<div id="banner-712">
+  <div class="cs-container">
+    <span class="cs-int-title">Website Creation </span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/Brunswick Street.jpeg"
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/Brunswick Street.jpeg"
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="/assets/images/Brunswick Street.jpeg"
+      alt="pills"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-75">
+  <div class="cs-container">
+    <div class="cs-wrapper">
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/istockphoto-1413922045-612x612.jpeg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/istockphoto-1413922045-612x612.jpeg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/istockphoto-1413922045-612x612.jpeg"
+          alt="body builder"
+          width="500"
+          height="552"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Building Your Website </span>
+      <h2 class="cs-title">Your Ideas Made Digital</h2>
+      <p class="cs-text">
+        In the creation process, functionality and intelligent design aesthetics
+        take center stage. We ensure every feature serves a purpose, enhancing
+        user experience while keeping a keen eye on your business goals. Custom
+        themes and color schemes aren't just visual elements; they're selected
+        with precision to seamlessly extend your brand into the digital space.
+      </p>
+      <p class="cs-text">
+        Your website is a dynamic tool connecting your business with its
+        customers. We prioritize understanding your customer base and tailoring
+        functionalities to enhance their experience. The aim is to create a
+        virtual space that authentically reflects the in-person experience.
+      </p>
+
+      <p class="cs-text">
+        In essence, we take the purpose of your website as seriously as the
+        coding part. As a result, we are able to build websites that feel
+        familiar to both you and your customers - an online presence built to be
+        used, and made for someone who understands why.
+      </p>
+      <a
+        class="cs-button-solid"
+        aria-label="learn more about our programs"
+        href="/contact"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+</section>
+
+{% endblock %}
